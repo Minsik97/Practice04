@@ -1,8 +1,12 @@
 package com.javaex.practice;
 
+import java.util.Scanner;
+
 public class Ex07 {
 
 	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
 		int[] wonArray = new int[10];
 		
 		wonArray[0] = 50000;
@@ -16,14 +20,17 @@ public class Ex07 {
 		wonArray[8] = 5;
 		wonArray[9] = 1;
 		
-		int num = 0;
+		int won = sc.nextInt();
 		
 		for(int i = 0; i<wonArray.length; i++) {
-			num = num+wonArray[i];
 			
-		}System.out.println("금액: "+ num);
+			int a = won/wonArray[i];
+			
+			}
+		
 	
 	
+	sc.close();
 	
 	}
 
